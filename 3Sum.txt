@@ -1,0 +1,18 @@
+s = []
+n = number of integers
+target = given number
+find 3 numbers in array such that there sum is 
+closest to target
+
+example - 
+
+
+s = [-1,2,1,-4]
+target = 1
+sum that is closest to target is 2.
+
+
+algorithm - 
+
+
+
