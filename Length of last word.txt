@@ -1,0 +1,19 @@
+var lengthOfLastWord = function(s) {
+    const temp = s.trim();
+    count = 0
+    for(let i = temp.length-1; i >= 0; i--){
+        if(temp[i]== ' '){
+            return count;
+        }
+        count = count + 1;
+    }
+    return count;
+};
+
+
+Solution 2
+
+var lengthOfLastWord = function (s) {
+  const words = s.trim().split(" ");
+  return words.length > 0 ? words[words.length - 1].length : 0;
+};
