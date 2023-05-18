@@ -1,0 +1,50 @@
+n= number of prices 
+p[i] = price of ith element
+find the maximum profit 
+find the day to sell the stock
+and find the day to buy a stock
+if u can not acchieve profit return 0
+
+
+example- 
+p = [7,1,5,3,6,4]
+n = 6
+the lowest price of the stock is on the 2nd day =1
+starting from the 2nd of the stock the highest price is on 
+5th day =6
+6-1 = 5
+p = [7,6,4,3,1]
+lowest price on day 5 =1
+maximum profit made = 0
+
+p = [7,8,7]
+
+algorithm -
+
+buy =  price[0]
+maxprofit  = 0
+for(i=1;i<n;i++){
+	if (buy > price[i]){
+		buy = price[i]
+	}
+	elseif (price[i] - buy > maxprofit){
+		maxprofit = price[i] - buy
+	}
+}
+buy = 7
+maxprofit =0
+
+step1
+if 7 > 1
+	buy = 1
+maxprofit = 0
+
+step2
+if 1 > 5
+elseif 5-1 > 0
+	maxprofit  = 4
+
+step3
+if 1 > 3
+elseif 3 -1 > 4
+
